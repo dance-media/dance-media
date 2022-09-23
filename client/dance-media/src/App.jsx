@@ -3,7 +3,7 @@ import { useState } from 'react'
 function App() {
   return (
     <div className="App">
-      <h1>dance-media</h1>
+      <h1>辣鸡</h1>
     </div>
   )
 }
