@@ -23,6 +23,31 @@ module.exports = appInfo => {
     // myAppName: 'egg',
   };
 
+  config.jwt = {
+    secret: 'iostream',
+  };
+  config.sequelize = {
+    dialect: 'mysql',
+    host: 'localhost',
+    port: 3306,
+    database: 'test',
+    username: 'root',
+    password: 'root12345',
+    timezone: '+08:00',
+  };
+
+  config.multipart = {
+    fileSize: 300 * 1000 * 1000, // 设置上传限制为300M
+  };
+  config.security = {
+    csrf: {
+      enable: false, // 前后端分离，post请求不方便携带_csrf
+    },
+    domainWhiteList: [
+      '*',
+    ], // 配置白名单
+  };
+
   return {
     ...config,
     ...userConfig,
