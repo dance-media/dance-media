@@ -28,11 +28,11 @@ module.exports = appInfo => {
   };
   config.sequelize = {
     dialect: 'mysql',
-    host: 'localhost',
+    host: '121.40.42.53',
     port: 3306,
     database: 'test',
     username: 'root',
-    password: 'root12345',
+    password: 'cyhdcx.CN',
     timezone: '+08:00',
   };
 
